@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>PHPWebProject2</Name>
+    <ProjectGuid>d07ff008-7e3d-4f01-a0d8-80f9ea0a3937</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>PHPWebProject2</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="adminhome.php" />
+    <Compile Include="adminlogin.php" />
+    <Compile Include="class_dbcon.php" />
+    <Compile Include="class_login.php" />
+    <Compile Include="config.php" />
+    <Compile Include="index.php" />
+    <Compile Include="logout.php" />
+    <Compile Include="meineinhalte.php" />
+    <Compile Include="navBar.php" />
+    <Compile Include="teilnehmer.php" />
+    <Compile Include="userhome.php" />
+    <Compile Include="userlogin.php" />
+    <Compile Include="veranstaltungen.php" />
+    <Compile Include="vortragende.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Keine-Angst-vorm-schwarzen-Mann.pdf" />
+    <Content Include="Mag-dich-dein-Toaster.pdf" />
+    <Content Include="Narrische-Schwammerl.pdf" />
+    <Content Include="Pro-Schoko-Kurs.pdf" />
+    <Content Include="Sei-kein-Hosentraeger.pdf" />
+    <Content Include="stylesheet.css" />
+  </ItemGroup>
+</Project>

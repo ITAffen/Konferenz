@@ -1,0 +1,257 @@
+<style type="text/css">
+
+h1 {
+	font-family: Verdana;
+    color: #696969;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+h2 {
+	font-family: Verdana;
+    color: #A52A2A;
+	margin-left: 40px;
+
+}
+
+a {
+    text-decoration: none;
+	font-family: Verdana;
+	font-size: 12px;
+	font-style: bold;
+	color: white;
+}
+
+a.aa {
+    text-decoration: none;
+	font-family: Verdana;
+	font-size: 18px;
+	font-style: bold;
+	color: white;
+	margin-left: 40px;
+	border-style: solid;
+	border-color: black;
+}
+
+/* margin-left: 40px; fehlt in p*/
+p {
+	margin-top: 20px;
+	
+}
+
+
+br{
+	margin-left: 40px;
+}
+
+
+footer{
+	margin-top: 100px;
+	margin-left: 40px;
+}
+
+table.imagetable {
+	font-family: verdana;
+	font-size:12px;
+	color:#DEB887;
+	border-width: 2px;
+	border-collapse: collapse;
+	margin-left: 40px;
+}
+table.imagetable th {
+	border-width: 2px;
+	padding: 8px;
+	border-style: solid;
+}
+table.imagetable td {
+	background:#A52A2A;
+	border-width: 2px;
+	padding: 8px;
+	border-style: solid;
+}
+
+.button {
+    background-color: #A52A2A; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 40px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	width: 150px;
+}
+
+.button1 {
+    background-color: #A52A2A; 
+    color: white; 
+    border: 2px solid #696969;
+}
+
+.button1:hover {
+    background-color: #ff8000;
+    color: white;
+}
+
+select{
+	margin-left: 40px;
+	padding: 8px 12px;
+}
+
+input{
+	font-size: 14px;
+	padding: 14px 20px;
+}
+
+
+/*--Setzt alle Abstände auf "Null"--*/ 
+* { 
+margin: 0; 
+padding: 0; 
+}
+
+/*--formatiert die Menüleiste--*/ 
+#menu { 
+width: 100%; 
+padding: 0 20px; 
+background: #EEE8AA; 
+font-family: Verdana; 
+font-size: 12px; 
+line-height: 1.5; 
+float: left; 
+}
+
+/*--formatiert die Themenblöcke--*/ 
+#menu ul { 
+float: left; 
+width: 140px; 
+list-style-type: none; 
+}
+
+/*--definiert die Blocküberschriften--*/ 
+#menu h3 { 
+font-size: 12px; 
+text-align: center; 
+color: #DEB887; 
+border: 1px solid #A52A2A; /*--erforderlich für IE 7--*/ 
+background: #A52A2A; 
+} 
+
+/*--definiert die "Drop-Down-Links" im Normalzustand--*/ 
+#menu a { 
+text-decoration: none; 
+display: block; 
+border: 1px solid #ccc; 
+text-align: center; 
+background: #A52A2A; 
+color: #DEB887; 
+} 
+
+/*--definiert die "Drop-Down-Links" im Hoverzustand--*/ 
+#menu a:hover { 
+color: #FFEFD5; 
+background: #696969; 
+}
+
+/* 
+*verhindert im Zusammenhang mit position absolute bei ul ul 
+*eine Höhenvergrößerung von #menu beim Hovern-- 
+*/ 
+
+#menu li { 
+position: relative; 
+} 
+
+/*--versteckt die "Drop-Down-Links", solange nicht gehovert wird--*/ 
+#menu ul ul { 
+position: absolute; 
+z-index: 2; 
+display: none; 
+}
+
+/*--lässt die Dropdown-Links beim Hovern erscheinen--*/ 
+#menu ul li:hover ul { 
+display: block; 
+}
+
+/*--nur für IE-Versionen kleiner gleich 6 erkennbar--*/ 
+
+* html #menu ul li { 
+float: left; 
+width: 100%; 
+} 
+
+/*--nur für IE 7 erkennbar--*/ 
+
+*+ html #menu ul li { 
+float: left; 
+width: 100%; 
+}
+
+/*--bewirkt Hover-Effekt für IE kleiner 7 auch für ul- und li-Elemente--*/ 
+*html body { 
+behavior: url(csshover3-source.htc); 
+font-size: 100%; 
+} 
+
+*html #menu ul li a { 
+height: 1%; 
+}
+
+/*--definiert einen Einzellink im Normalzustand, wenn kein Drop-Down erforderlich--*/ 
+
+#menu a.direkt:link { 
+font-size: 12px; 
+font-weight: bold; 
+text-align: center; 
+color: #ff8000; 
+border: 1px solid #DEB887; 
+background: #ff8000; 
+} 
+
+/*--definiert einen Einzellink im Hoverzustand, wenn kein Drop-Down erforderlich--*/ 
+
+#menu a.direkt:hover { 
+color: #A52A2A; 
+background: #ff8000; 
+border: 1px solid #DEB887; 
+} 
+
+float: left; 
+width: 100%; 
+}
+
+/*--bewirkt Hover-Effekt für IE kleiner 7 auch für ul- und li-Elemente--*/ 
+*html body { 
+behavior: url(csshover3-source.htc); 
+font-size: 100%; 
+} 
+
+*html #menu ul li a { 
+height: 1%; 
+}
+
+/*--definiert einen Einzellink im Normalzustand, wenn kein Drop-Down erforderlich--*/ 
+
+#menu a.direkt:link { 
+font-size: 12px; 
+font-weight: bold; 
+text-align: center; 
+color: #ff8000; 
+border: 1px solid #DEB887; 
+background: #ff8000; 
+} 
+
+/*--definiert einen Einzellink im Hoverzustand, wenn kein Drop-Down erforderlich--*/ 
+
+#menu a.direkt:hover { 
+color: #A52A2A; 
+background: #ff8000; 
+border: 1px solid #DEB887; 
+} 
+
+</style>
